@@ -1,0 +1,18 @@
+<?php
+
+use CodeIgniter\Router\RouteCollection;
+
+/**
+ * @var RouteCollection $routes
+ */
+$routes->get('/', 'Home::index');
+
+// Rutas para el organizador de tareas - TODAS CORREGIDAS
+$routes->get('tasks', 'Tasks::index');
+$routes->get('tasks/create', 'Tasks::create');
+$routes->post('tasks/create', 'Tasks::create');
+$routes->get('tasks/edit/(:num)', 'Tasks::edit/$1');
+$routes->post('tasks/edit/(:num)', 'Tasks::edit/$1');
+$routes->get('tasks/view/(:num)', 'Tasks::view/$1');
+$routes->get('tasks/delete/(:num)', 'Tasks::delete/$1');
+$routes->get('tasks/search', 'Tasks::search');

@@ -1,0 +1,11 @@
+/writable/logs/
+/writable/cache/
+/writable/session/
+/writable/uploads/
+.env
+/vendor/
+/node_modules/
+.DS_Store
+.htaccess
+git add .
+git commit -m "Primer commit: Sistema de tareas con login básico"
